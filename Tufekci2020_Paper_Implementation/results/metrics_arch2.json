@@ -1,0 +1,65 @@
+{
+  "arch": 2,
+  "name": "Tufekci'20 CORDIC rotator (1 DSP)",
+  "latency_clk": 51,
+  "budget_pct": 1.02,
+  "iq_step_hil": {
+    "initial": -0.008478349999999999,
+    "final": 0.2278165263157895,
+    "rise_ms": 0.29534540478074334,
+    "overshoot_pct": 1.5884701956864644,
+    "settling_ms": 0.7109999999999985
+  },
+  "iq_step_golden": {
+    "initial": -0.0089272575,
+    "final": 0.229926,
+    "rise_ms": 0.30816963177162293,
+    "overshoot_pct": 0.3219549978295877,
+    "settling_ms": 0.5500000000000007
+  },
+  "speed_step_hil": {
+    "initial": 0.098438,
+    "final": 0.2507392,
+    "rise_ms": 2.792901628115871,
+    "overshoot_pct": 2.239509603338652,
+    "settling_ms": 10.899999999999999
+  },
+  "speed_step_golden": {
+    "initial": 0.0981843,
+    "final": 0.25066714,
+    "rise_ms": 2.806827620164853,
+    "overshoot_pct": 3.0054922901488146,
+    "settling_ms": 12.549999999999997
+  },
+  "live_change_hil": {
+    "initial": 0.250526,
+    "final": 0.3505316,
+    "rise_ms": 2.2497372763900074,
+    "overshoot_pct": 5.178110025838589,
+    "settling_ms": 15.049999999999997
+  },
+  "live_change_golden": {
+    "initial": 0.2505604,
+    "final": 0.35060505999999997,
+    "rise_ms": 2.3313629747833744,
+    "overshoot_pct": 4.853772305288517,
+    "settling_ms": 14.5
+  },
+  "load_step_hil": {
+    "speed_before": 0.350382,
+    "max_dip": 0.03361200000000003,
+    "recovery_ms": 13.5
+  },
+  "load_step_golden": {
+    "speed_before": 0.35053044999999994,
+    "max_dip": 0.03314644999999994,
+    "recovery_ms": 13.799999999999997
+  },
+  "iq_ripple_pkpk": 0.010739999999999996,
+  "iq_ripple_rms": 0.0027245754532909043,
+  "speed_rms_dev_vs_golden_pu": 0.0006990312804496376,
+  "faults_seen": [
+    1,
+    2
+  ]
+}

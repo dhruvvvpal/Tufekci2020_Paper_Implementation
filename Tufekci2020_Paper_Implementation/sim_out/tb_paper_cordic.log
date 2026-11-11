@@ -1,0 +1,6 @@
+T1 CORDIC rotator : 4096 vectors, max |err| = 1.302960e-04 pu (1.07 LSB of Q3.13)
+T2 paper FOC loop : max |err| id/iq 1.502557e-04 pu, valpha/vbeta 1.924770e-04 pu, 0 out of tolerance
+T3 anti-windup    : |int_q| = 0.084526 pu after 300 saturated samples (bound 0.577393)
+LATENCY           : 51 clk per control sample (budget 5000 -> 1.02 %)
+RESULT            : PASS
+tb_paper_cordic.sv:95: $finish called at 2020270000 (1ps)

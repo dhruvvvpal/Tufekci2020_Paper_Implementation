@@ -1,0 +1,26 @@
+[75000] ID_VERSION = 50110001
+t=0     RUN (torque mode)
+t=22ms  current step iq*=0.25
+t=23ms  current step iq*=0
+t=25ms  speed mode w*=0.10
+t=40ms  speed step  w*=0.25
+t=65ms  live change w*=0.35
+t=90ms  load step   TL=0.30
+        STATUS before fault = 00000003 (state 3)
+t=110ms over-current injected
+        STATUS = 00000714  state=4 fault=1 irq=1  -> OC response 1 clk
+        after FAULT_CLR state=0 irq=0
+t=122ms load removed
+t=122.5ms restart (RUN=1)
+t=155ms stall load TL=1.2
+        STATUS = 00000124  state=4 fault=2 (2 = STALL)
+
+================ P11 SYSTEM RESULTS (ARCH 2) ================
+current-loop latency last/max   : 51 / 51 clk of 5000
+shoot-through events            : 0 (want 0)
+dead-time violations           : 0 (want 0), min measured 11 clk (DT=10)
+switching-table violations     : 0 clk
+over-current -> gates off      : 1 clk (spec <= 1)
+fault interrupts               : 2
+RESULT: PASS
+- /tmp/clean/tb/tb_p11_system.sv:166: Verilog $finish
